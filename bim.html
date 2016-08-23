@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Bim</title>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				border: 0;
+			}
+			.para{
+				/*position: absolute;*/
+				top: 0;
+				width: 100%;
+				/*max-width: 1137px;*/
+				margin: 0 auto;
+			}
+			html,body{
+				width: 100%;
+				height: 100%;
+				/*font-size: 12px;*/
+			}
+			#header_wrap{
+				position: fixed;
+				z-index: 100000;
+			}
+			
+			.para1{
+				background-color: #e5e5e5;
+				width: 100%;
+			}
+			.para1_wrap{
+				max-width: 1137px;
+				margin: 0 auto;
+				padding-top: 100px;
+				z-index: 100;
+			    padding-top: 100px;
+			    padding-bottom: 4em;
+			    position: relative;
+				height: 440px;
+				overflow: hidden;
+			}
+			h2{
+				color: #616161;
+			    display: inline-block;
+			    border: 1px solid #616161;
+			    line-height: 105%;
+			    font-size: 20px;
+			    border-radius: 6px;
+			    margin-right: 5px;
+			    width: 27px;
+			    height: 27px;
+			    text-align: center;
+			    line-height: 27px;
+			    font-family: arial;
+			    font-weight: normal;
+			}
+			h3{
+				color: #616161;
+			    display: inline-block;
+			    line-height: 150%;
+			    font-size: 20px;
+			    font-family: arial;
+			    font-weight: normal;
+			}
+			span{
+				display: block;
+			    width: 338px;
+			    line-height: 1.4em;
+			    margin: 15px 0 30px;
+			    z-index: 100;
+			    word-break: break-word;
+			    font-family: arial;
+			    font-size: 1.08em;
+			}
+			.imgs{
+				width: 40%;
+    				overflow: hidden;
+			}
+			.imgs img{
+				width: 33%;
+				float: left;
+			}
+			.para1_wrap_right{
+				width: 350px;
+			    position: absolute;
+			    right: -50px;
+			    bottom: 0;
+			}
+			.para1_wrap_right img{
+				width: 350px;
+				height: 488px;
+				display: block;
+			}
+			.para2{
+				width: 100%;
+				background-color: white;
+			}
+			.para2_wrap{
+				max-width: 1137px;
+				margin: 0 auto;
+				padding-top: 100px;
+				z-index: 100;
+			    padding-top: 100px;
+			    padding-bottom: 4em;
+			    position: relative;
+				height: 440px;
+				overflow: hidden;
+			}
+			.imgs1{
+				width: 50%;
+				overflow: hidden;
+			}
+			.imgs1 img{
+				margin-right: 6px;
+				width: 47%;
+			}
+			.para2_wrap_right{
+				position: absolute;
+				top: 0;
+				width: 350px;
+			    right: -5px;
+			}
+			.para3{
+				width: 100%;
+				background-color: #E5E5E5;
+			}
+			.para3_wrap{
+				max-width: 1137px;
+				margin: 0 auto;
+				padding-top: 100px;
+				z-index: 100;
+			    padding-top: 100px;
+			    padding-bottom: 4em;
+			    position: relative;
+				height: 440px;
+				overflow: hidden;
+			}
+			.para3_wrap_left{
+				width: 400px;
+			    position: absolute;
+			    left: -125px;
+			    bottom: 0;
+			}
+			.para3_wrap_right{
+				z-index: 100;
+			    padding-bottom: 245px;
+			    /*padding-top: 190px;*/
+			    padding-bottom: 15.35em;
+			    padding-left: 27.5625em;
+			    position: relative;
+			}
+			.imgs2{
+				min-width: 150px;
+			}
+			.imgs2 img{
+				width: 45%;
+			    margin-right: 6px;
+			    min-width: 200px;
+			}
+			.para4{
+				width: 100%;
+				background-color: white;
+			}
+			.para4_wrap{
+				max-width: 1137px;
+				margin: 0 auto;
+				padding-top: 100px;
+				z-index: 100;
+			    padding-top: 100px;
+			    padding-bottom: 4em;
+			    position: relative;
+				height: 440px;
+				overflow: hidden;
+			}
+			.para4_wrap_left{
+				width: 400px;
+			    position: absolute;
+			    left: -125px;
+			    top: 0;
+			}
+			.para4_wrap_center{
+				width: 380px;
+				margin-top: -50px;
+			    z-index: 100;
+			    position: absolute;
+			    right: 200px;
+			}
+			.imgs3{
+				max-width: 280px;
+			}
+			.imgs3 img{
+				width: 100%;
+				margin-bottom: 6px;
+			}
+			.para4_wrap_right{
+				width: 400px;
+			    position: absolute;
+			    right: -100px;
+			    bottom: 0;
+			}
+			.para5{
+				width: 100%;
+				background-color: #E5E5E5;
+			}
+			.para5_wrap{
+				max-width: 1137px;
+				margin: 0 auto;
+				padding-top: 100px;
+				z-index: 100;
+			    padding-top: 100px;
+			    padding-bottom: 4em;
+			    position: relative;
+				height: 440px;
+				overflow: hidden;
+			}
+			.para5_wrap_right{
+				width: 400px;
+			    position: absolute;
+			    right: -43px;
+			    top: 0;
+			}
+			.para5_wrap h2{
+				margin-top: 200px;
+			}
+			.bottom{
+				
+				width: 100%;
+				margin-top: 30px;
+			}
+			.mail{
+				display: block;
+				width: 25px;
+				height: 19px;
+				margin: 0 auto;
+			}
+			.bottom img{
+				width: 25px;
+				position: absolute;
+			}
+			
+			.footer{
+				width: 145px;
+				height: 25px;
+				/*border: 1px solid red;*/
+				margin: 0 auto;
+				margin-top: 20px;
+				overflow: hidden;
+			}
+			.footer a{
+				display: block;
+				width: 25px;
+				height: 25px;
+				float: left;
+				margin-right: 15px;
+			}
+			.copyright{
+				width: 100%;
+				line-height: 4em;
+			}
+			.copyright p{
+				color: #808080;
+    				font-size: 10px;
+    				font-family: arial;
+    				text-align: center;
+			}
+			.head{
+				position: fixed;
+				top: 0;
+				z-index: 100000;				
+			}
+			
+			.download{
+				position: fixed;
+			    bottom: 0;
+			    right: 0;
+			    background-color: rgba(0,0,0,0.6);
+			    width: 280px;
+			    text-align: center;
+			    z-index: 10000;
+			    font-size: 12px;
+			    height: 30px;
+			}
+			.download a{
+				text-decoration: none;
+			    outline: none;
+			    display: block;
+			    overflow: hidden;
+			}
+			.download span{
+				padding-left: 10px;
+				margin: 0;
+			    color: white;
+			    width: 260px;
+			    line-height: 30px;
+			    text-align: left;
+			    padding-right: 10px;
+			    font-size: 14px;
+			    font-family: arial;
+			    float: left;
+			}
+			.download img{
+				vertical-align: middle;
+    				width: 13px;
+    				position: absolute;
+    				right: 5px;
+    				top: 7px;
+    				float: left;
+			}
+			@media screen and (max-width: 850px) and (min-width:640px){
+				.links{
+					display: none;
+				}
+				.head_wrap .links1{
+					display: block;
+					position: absolute;
+					right:20px ;
+					width: 20px;
+					height: 30px;
+					font-size: 2rem;
+					line-height: 70px;
+				}
+				.links1 img{
+					width: 100%;
+				}
+				.links2{
+					display: none;
+					width: 120px;
+					height: 150px;
+					background-color: #CFDB00;
+					position: absolute;
+					right: 0;
+					top: 100%;
+					z-index: 1000;
+				}
+				.links2 a{
+					color: white;
+					text-align: center;
+					text-decoration: none;
+					display: block;
+					padding-top: 7px;
+				}
+			}
+			@media screen and (max-width: 640px){
+				html{
+					font-size: 10px;
+					width: 100%;
+					height: 100%;
+				}
+				body{
+					width: 100%;
+					height: 100%;
+				}
+				
+				
+				h3{
+					font-size: 0.9em;
+   					 line-height: 1.5em;
+				}
+				span{
+					font-size: 0.8em;
+    					line-height: 1em;
+    					width: 55%;
+    					margin: 1.5em 0;
+				}
+				.para{
+					margin-top: 70px;
+					position: absolute;
+					z-index: 50;
+				}
+				.para1_wrap,.para2_wrap,.para3_wrap,.para4_wrap,.para5_wrap{
+					height: 280px;
+					margin-left: 5px;
+				}
+				.para1_wrap_right{
+					width: 277px;
+					height: 377px;
+    					right: -80px;
+				}
+				.para1_wrap_right img{
+					width: 270px;
+					height: 377px;
+				}
+				.imgs{
+					padding-bottom: 3em;
+				    margin-left: 2%;
+				    padding-top: 1.5em;
+				    width: 50%;
+				}
+				.imgs1{
+					width: 75%;
+				}
+				.para2_wrap_right{
+					width: 270px;
+    					right: -38px;
+    					z-index: -1;
+				}
+				.para3_wrap_left{
+					width: 280px;
+					z-index: -2;
+				}
+				.para3_wrap_right{
+					padding-left: 8.5em;
+				}
+				.imgs2 img{
+					width: 44%;
+					min-width: 150px;
+				}
+				.para4_wrap_left{
+					width: 280px;
+    					left: -125px;
+				}
+				.para4_wrap_center{
+					padding-top: 55px;
+				    right: 95px;
+				    z-index: 100;
+				    width: 204px;
+				}
+				.para4_wrap_right{
+					width: 290px;
+					z-index: -2;
+				}
+				.imgs3 img{
+					width: 90%;
+				}
+				.para5_wrap_right{
+					width: 290px;
+    					right: -59px;
+    					z-index: -2;
+				}
+				.para5_wrap h2{
+					margin-top: 0;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header_wrap"  style="height: 70px;">
+			<div id="header" >
+				<a id="logo" href="###" style="padding-top: 15px;background-repeat: no-repeat;"></a>
+				<div id="nav">
+					<a href="index.html">Home</a>
+					<a href="about.html">About</a>
+					<a href="rendering.html" >Rendering</a>
+					<a href="animation3d.html">3D Animation</a>
+					<a href="bim.html" class="choose">Bim</a>
+					<a href="contact.html">Contact</a>
+				</div>
+				<a class="nav1" href="###" style="padding-top: 5px;">
+					<img src="img/bars.png" />
+				</a>
+			</div>
+		</div>
+		<div class="para">
+			<div class="para1">
+				<div class="para1_wrap">
+					<div class="para1_wrap_left">
+						<h2>1</h2>
+						<h3>MODEL COMPLETION</h3>
+						<span>Establishing and creating the visible and multi-dimension Architecture, Structural and MEP</span>
+						<div class="imgs">
+							<img src="img/BIM-p1-1.png"/>
+							<img src="img/BIM-p1-2.png"/>
+							<img src="img/BIM-p1-3.png"/>
+						</div>
+					</div>
+					<div class="para1_wrap_right">
+						<img src="img/building1-half-t.png"/>
+					</div>
+				</div>
+			</div>
+			<div class="para2">
+				<div class="para2_wrap">
+					<h2>2</h2>
+					<h3>CLASH DETECTION</h3>
+					<span>Completing the clash detection among various design parties,engineers and even different organisations in con struction drawings.</span>
+					<div class="imgs1">
+						<img src="img/BIM-p2-1.jpg"/>
+						<img src="img/BIM-p2-2.jpg"/>
+					</div>
+					<img src="img/building1-half-b.png" class="para2_wrap_right"/>
+				</div>
+			</div>
+			<div class="para3">
+				<div class="para3_wrap">
+					<img src="img/building2-half-t.png" class="para3_wrap_left"/>
+					<div class="para3_wrap_right">
+						<h2>3</h2>
+						<h3>MEP INTEGRATION</h3>
+						<span>Profoundly completing the pipeline integration, design coordination and intra-organisational cooperation between Plumbing, HVAC and Electrical engineering.</span>
+						<div class="imgs2">
+							<img src="img/BIM-p3-1.jpg"/>
+							<img src="img/BIM-p3-2.jpg"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="para4">
+				<div class="para4_wrap">
+					<img src="img/building2-half-b.png" class="para4_wrap_left"/>
+					<div class="para4_wrap_center">
+						<h2>4</h2>
+						<h3>CURTAIN WALL REMEDYING</h3>
+						<span style="width: 100%;">Creating the abnormity wall based on parametric design tools, and completing detailed curtain wall nodes visibly.
+	</span>
+						<div class="imgs3">
+							<img src="img/BIM-p4-1.jpg"/>
+							<img src="img/BIM-p4-2.jpg"/>
+						</div>
+					</div>
+					<img src="img/building3-half-t.png" class="para4_wrap_right"/>
+				</div>
+			</div>
+			<div class="para5">
+				<div class="para5_wrap">
+					<h2>5</h2>
+					<h3>BIM CONSULTING</h3>
+					<span>To help you to precisely know what is BIM? How BIM use? When and who is suitably to implement BIM?</span>
+					<img src="img/building3-half-b.png" class="para5_wrap_right"/>
+				</div>
+			</div>
+			<div class="bottom">
+				<a href="###" class="mail">
+					<img src="img/mail.png" style="opacity: 1;"/>
+					<img src="img/mail-c.png" style="opacity: 0;"/>
+				</a>
+				<div class="footer">
+					<a href="###">
+						<img src="img/facebook.jpg" style="opacity: 1;"/>
+						<img src="img/facebook_h.jpg" style="opacity: 0;"/>
+					</a>
+					<a href="###">
+						<img src="img/youtube.jpg" style="opacity: 1;"/>
+						<img src="img/youtube_h.jpg" style="opacity: 0;"/>
+					</a>
+					<a href="###">
+						<img src="img/linkedln.jpg" style="opacity: 1;"/>
+						<img src="img/linkedln_h.jpg" style="opacity: 0;"/>
+					</a>
+					<a href="###" style="margin-right: 0;">
+						<img src="img/twitter.jpg" style="opacity: 1;"/>
+						<img src="img/twitter_h.jpg" style="opacity: 0;"/>
+					</a>
+				</div>
+				<div class="copyright">
+					<p>Copyright © 1998-2015 shining Group</p>
+				</div>
+			</div>
+		</div>
+			
+		<div class="download">
+			<a href="###">
+				<span>Click and download about our team</span>
+				<img src="img/download.png"/>
+			</a>
+		</div>
+	</body>
+	<script src="jquery-1.12.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="index.js" type="text/javascript" charset="utf-8"></script>
+	<script src="mousewheel.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function (){
+			
+			//头部点击效果切换
+			$(".links a").eq(4).addClass("active");
+			$(".links a").on("click",function (){
+				$.each($(".links a"), function(index,el) {
+					$(el).removeClass("active");
+				});	
+				$(this).addClass("active");
+			});
+			
+			var bol = false//假设菜单栏为隐藏
+			$(".links1").on("click",function(){
+				if(bol){
+					bol = false;
+					$(".links2").slideUp();
+				}else{
+					bol = true;
+					$(".links2").slideDown();
+				}
+			});
+			$(".links2").on("mouseleave",function(){
+				$(".links2").css("display","none");
+			});
+			function changeFn(obj){
+				obj.on("mouseenter",function (){
+					$(this).find("img").last().css({
+						opacity:1
+					});
+				});
+				obj.on("mouseleave",function (){
+					$(this).find("img").last().css({
+						opacity:0
+					});
+				});
+			}
+			changeFn($(".mail"));
+			changeFn($(".footer").children());
+			
+			//滚轮事件
+			
+			$(document).mousewheel(function (ev,bol){
+				var reg = /^\d{1}$/;
+				var str =$(document).scrollTop()/$(".para1").height();
+				var result=reg.test(str);
+				var strNum=Math.floor(str);
+				var strNum1=Math.ceil(str);
+//				alert(result);
+//				alert(strNum);
+				if (bol){
+					if (result) {
+						$("html,body").stop().animate({
+							scrollTop:$(document).scrollTop()-$(".para1").height()
+					    },500);
+					} else{
+						$("html,body").stop().animate({
+							scrollTop:strNum*$(".para1").height()
+					    },500);
+					}
+					
+				} else{
+					if (result) {
+						$("html,body").stop().animate({
+							scrollTop:$(document).scrollTop()+$(".para1").height()
+					    },500);
+					} else{
+						$("html,body").stop().animate({
+							scrollTop:strNum1*$(".para1").height()
+					    },500);
+					}
+				}
+			});
+		});
+
+	</script>
+</html>

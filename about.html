@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>About</title>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				border: 0;
+			}
+			html,body{
+				width: 100%;
+				height: 100%;
+			}
+			
+			.content{
+				width: 100%;
+				background-color: #e3e3e3;
+			}
+			.center{
+				width: 100%;
+				background-color: #e3e3e3;
+			}
+			.center_wrap{
+				width: 100%;
+			}
+			.center_middle{
+				max-width: 1137px;
+				background-image: url(img/world_map.png);
+				background-position: center;
+				background-repeat: no-repeat;
+				margin: 0 auto;
+			}
+			.center_middle h3{
+				font-size: 1.8em;
+				margin-bottom: 20px;
+				padding-top: 100px;
+			}
+			.p1{
+				font-size: medium;
+			    font-family: arial;
+			    font-weight: lighter;
+			    color: rgb(0, 0, 0);
+			    padding: 0px 0px 2em;
+			    margin: 0px;
+			    line-height: 2em;
+			    word-break: break-all;
+			    max-width: 480px;
+			}
+			.p2{
+				font-size: medium;
+			    font-family: arial;
+			    font-weight: lighter;
+			    color: rgb(0, 0, 0);
+			    padding: 0px 0px 2em;
+			    margin: 0px;
+			    line-height: 2em;
+			    text-align: justify;
+			    max-width: 480px;
+			}
+			.work{
+				max-width: 1137px;
+				margin: 0 auto;
+				overflow: hidden;
+				/*margin-top: 20px;*/
+			}
+			.work li{
+				list-style: none;
+				float: left;
+			    height: 75px;
+			    margin-bottom: 10px;
+			    text-align: left;
+			    margin-right: 59px;
+			}
+			.work img{
+				width: 100%;
+			}
+			.bottom{
+				
+				width: 100%;
+				margin-top: 30px;
+			}
+			.mail{
+				display: block;
+				width: 25px;
+				height: 19px;
+				margin: 0 auto;
+			}
+			.bottom img{
+				width: 25px;
+				position: absolute;
+			}
+			
+			.footer{
+				width: 145px;
+				height: 25px;
+				/*border: 1px solid red;*/
+				margin: 0 auto;
+				margin-top: 20px;
+				overflow: hidden;
+			}
+			.footer a{
+				display: block;
+				width: 25px;
+				height: 25px;
+				float: left;
+				margin-right: 15px;
+			}
+			.copyright{
+				width: 100%;
+				line-height: 4em;
+			}
+			.copyright p{
+				color: #808080;
+    				font-size: 10px;
+    				font-family: arial;
+    				text-align: center;
+			}
+			@media screen and (max-width: 850px) and (min-width:640px){
+				.links{
+					display: none;
+				}
+				.head_wrap .links1{
+					display: block;
+					position: absolute;
+					right:20px ;
+					width: 20px;
+					height: 30px;
+					font-size: 2rem;
+					line-height: 70px;
+				}
+				.links1 img{
+					width: 100%;
+				}
+				.links2{
+					display: none;
+					width: 120px;
+					height: 150px;
+					background-color: #CFDB00;
+					position: absolute;
+					right: 0;
+					top: 100%;
+					z-index: 100;
+				}
+				.links2 a{
+					color: white;
+					text-align: center;
+					text-decoration: none;
+					display: block;
+					padding-top: 7px;
+				}
+			}
+			
+			@media screen and (max-width: 640px) {
+				html{
+					font-size: 10px;
+					width: 100%;
+					height: 100%;
+				}
+				body{
+					width: 100%;
+					height: 100%;
+				}
+				.content{
+					position: relative;
+					margin-top: 70px;
+				}
+				.head{
+					position: fixed;
+					top: 0;
+					z-index: 100;
+				}
+				.head_wrap{
+					width: 100%;
+				}
+				.links{
+					display: none;
+				}
+				.head_wrap .links1{
+					display: block;
+					position: absolute;
+					right:20px ;
+					width: 30px;
+					height: 50px;
+					font-size: 2rem;
+					line-height: 80px;
+				}
+				.links1 img{
+					width: 100%;
+				}
+				
+				.links2{
+					display: none;
+					width: 120px;
+					height: 150px;
+					background-color: #CFDB00;
+					position: absolute;
+					right: 0;
+					top: 100%;
+					z-index: 100;
+				}
+				.links2 a{
+					color: white;
+					text-align: center;
+					text-decoration: none;
+					display: block;
+					padding-top: 7px;
+					font-size: 1.4rem;
+				}
+				.center_middle h3{
+					font-size: 3rem;
+				}
+				.p1,.p2{
+					width: 92%;
+					margin: 0 auto;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="content">
+			<div id="header_wrap"  style="height: 70px;">
+				<div id="header" >
+					<a id="logo" href="###" style="padding-top: 15px;background-repeat: no-repeat;"></a>
+					<div id="nav">
+						<a href="index.html">Home</a>
+						<a href="about.html" class="choose">About</a>
+						<a href="rendering.html" >Rendering</a>
+						<a href="animation3d.html">3D Animation</a>
+						<a href="bim.html">Bim</a>
+						<a href="contact.html">Contact</a>
+					</div>
+					<a class="nav1" href="###" style="padding-top: 5px;">
+						<img src="img/bars.png" />
+					</a>
+				</div>
+			</div>
+			<div class="center">
+				<div class="center_wrap">
+					<div class="center_middle">
+						<h3>About Us</h3>
+						<p class="p1">
+							Shanghai Shining is a creative corporation which focuses on helping
+		architects and owners turn their construction which is still in design 
+		stage into visual images or videos, perfectly showing the essence 
+		of construction.
+						</p>
+						<p class="p2">
+							Since the year of 1998, we have finished more than 20000 3D
+		visualization creativities of all Kinds of architecture for nearly 2000
+		architect firms both at home and abroad. We have used 3D technology,shooting, drawing and architectonic to provide the clients with the
+		services of CG images, CG animations, BIM and 3D products finally
+						</p>
+					</div>
+						
+				</div>
+				<ul class="work">
+					<li><img src="img/aedas.png"/></li>
+					<li><img src="img/gensler.png"/></li>
+					<li><img src="img/bdp.png"/></li>
+					<li><img src="img/ch2mhill.png"/></li>
+					<li><img src="img/benoy.png"/></li>
+					<li><img src="img/sasaki.png"/></li>
+					<li><img src="img/edsa.png"/></li>
+					<li><img src="img/kpf.png"/></li>
+				</ul>
+			</div>
+		</div>
+		<div class="bottom">
+			<a href="###" class="mail">
+				<img src="img/mail.png" style="opacity: 1;"/>
+				<img src="img/mail-c.png" style="opacity: 0;"/>
+			</a>
+			<div class="footer">
+				<a href="###">
+					<img src="img/facebook.jpg" style="opacity: 1;"/>
+					<img src="img/facebook_h.jpg" style="opacity: 0;"/>
+				</a>
+				<a href="###">
+					<img src="img/youtube.jpg" style="opacity: 1;"/>
+					<img src="img/youtube_h.jpg" style="opacity: 0;"/>
+				</a>
+				<a href="###">
+					<img src="img/linkedln.jpg" style="opacity: 1;"/>
+					<img src="img/linkedln_h.jpg" style="opacity: 0;"/>
+				</a>
+				<a href="###" style="margin-right: 0;">
+					<img src="img/twitter.jpg" style="opacity: 1;"/>
+					<img src="img/twitter_h.jpg" style="opacity: 0;"/>
+				</a>
+			</div>
+			<div class="copyright">
+				<p>Copyright © 1998-2015 shining Group</p>
+			</div>
+		</div>
+	</body>
+	<script src="jquery-1.12.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="index.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function (){
+			//头部点击效果切换
+			$(".links a").eq(1).addClass("active");
+			$(".links a").on("click",function (){
+				$.each($(".links a"), function(index,el) {
+					$(el).removeClass("active");
+				});	
+				$(this).addClass("active");
+			});
+			
+			var bol = false//假设菜单栏为隐藏
+			$(".links1").on("click",function(){
+				if(bol){
+					bol = false;
+					$(".links2").slideUp();
+				}else{
+					bol = true;
+					$(".links2").slideDown();
+				}
+			});
+			$(".links2").on("mouseleave",function(){
+				$(".links2").css("display","none");
+			});
+			function changeFn(obj){
+				obj.on("mouseenter",function (){
+					$(this).find("img").last().css({
+						opacity:1
+					});
+				});
+				obj.on("mouseleave",function (){
+					$(this).find("img").last().css({
+						opacity:0
+					});
+				});
+			}
+			changeFn($(".mail"));
+			changeFn($(".footer").children());
+		});
+	</script>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>contact</title>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				border: 0;
+				text-decoration: none;
+			}
+			html,body{
+				width: 100%;
+				height: 100%;
+			}
+			
+			
+			.middle_head{
+				position: relative;
+			    text-align: center;
+			    padding-top: 7em;
+			    background: url(img/contact_point_bg.png) no-repeat;
+			    background-position: center 69px;
+			    background-color: #f5f5f5;
+			}
+			.middle_head span{
+				font-size: 1.4em;
+			    vertical-align: middle;
+			    font-weight: bold;
+			    font-family: arial;
+			    color: black;
+			}
+			.middle_head em{
+				font-weight: bold;
+			    font-style: normal;
+			    vertical-align: middle;
+			    font-size: 1.1em;
+			    color: #595757;
+			    font-family: arial;
+			}
+			.mail{
+				margin-top: 30px;
+				margin-bottom: 5em;
+				overflow: hidden;
+				line-height: 30px;
+			}
+			.mail img{
+				vertical-align: middle;
+			    margin-right: 7px;
+			    width: 32px;
+			}
+			.contact_way{
+				width:680px;
+			    margin: 0 auto;
+			    overflow: hidden;
+			    zoom: 1;
+			    font-size: 12px;
+			}
+			.contact_tele{
+				float: left;
+			    position: relative;
+			    text-align: left;
+			    color: #595757;
+			    width: 216px;
+			}
+			.contact_tele p{
+				margin-left: 10px;
+				color: black;
+			}
+			.contact_phone p{
+				position: absolute;
+				top: 20px;
+				left: 30px;
+				color: black;
+			}
+			.contact_phone{
+				float: left;
+			    position: relative;
+			    text-align: left;
+			    color: #595757;
+			    width: 175px;
+			}
+			.contact_add p{
+				position: absolute;
+				top: 10px;
+				left: 30px;
+				color: black;
+			}
+			.contact_add{
+				float: left;
+			    position: relative;
+			    text-align: left;
+			    color: #595757;
+			    width: 288px;
+			}
+			.contact_add div,.contact_phone div,.contact_tele div{
+				display: inline-block;
+			}
+			.img1{
+				width: 100%;
+			}
+			.bottom{
+				margin-top: 30px;
+			}
+			.bottom img{
+				width: 25px;
+				position: absolute;
+			}
+			
+			.footer{
+				width: 145px;
+				height: 25px;
+				/*border: 1px solid red;*/
+				margin: 0 auto;
+				margin-top: 20px;
+				overflow: hidden;
+			}
+			.footer a{
+				display: block;
+				width: 25px;
+				height: 25px;
+				float: left;
+				margin-right: 15px;
+			}
+			.copyright{
+				width: 100%;
+				line-height: 4em;
+			}
+			.copyright p{
+				color: #808080;
+    				font-size: 10px;
+    				font-family: arial;
+    				text-align: center;
+			}
+			@media screen and (max-width: 850px) and (min-width:640px){
+				.links{
+					display: none;
+				}
+				.head_wrap .links1{
+					display: block;
+					position: absolute;
+					right:20px ;
+					width: 20px;
+					height: 30px;
+					font-size: 2rem;
+					line-height: 70px;
+				}
+				.links1 img{
+					width: 100%;
+				}
+				.links2{
+					display: none;
+					width: 120px;
+					height: 150px;
+					background-color: #CFDB00;
+					position: absolute;
+					right: 0;
+					top: 100%;
+					z-index: 100;
+				}
+				.links2 a{
+					color: white;
+					text-align: center;
+					text-decoration: none;
+					display: block;
+					padding-top: 7px;
+				}
+			}
+			@media screen and (max-width: 640px){
+				html{
+					font-size: 10px;
+					width: 100%;
+					height: 100%;
+				}
+				body{
+					width: 100%;
+					height: 100%;
+				}
+				.head_wrap{
+					width: 100%;
+				}
+				.links{
+					display: none;
+				}
+				.head_wrap .links1{
+					display: block;
+					position: absolute;
+					right:20px ;
+					width: 30px;
+					height: 50px;
+					font-size: 2rem;
+					line-height: 80px;
+				}
+				.links1 img{
+					width: 100%;
+				}
+				.links2{
+					display: none;
+					width: 120px;
+					height: 150px;
+					background-color: #CFDB00;
+					position: absolute;
+					right: 0;
+					top: 100%;
+					z-index: 100;
+				}
+				.links2 a{
+					color: white;
+					text-align: center;
+					text-decoration: none;
+					display: block;
+					padding-top: 7px;
+					font-size: 1.4rem;
+				}
+				.middle_head span{
+					font-size: 2.2rem;
+				    vertical-align: middle;
+				    font-weight: bold;
+				    font-family: arial;
+				    color: black;
+				}
+				.middle_head em{
+					font-weight: bolder;
+				    font-style: normal;
+				    vertical-align: middle;
+				    font-size: 1.8rem;
+				    font-family: arial;
+				    color: #595757;
+				}
+				.contact_way{
+					width: 288px;
+				}
+				.mail{
+					margin-bottom: 30px;
+				}
+				.contact_phone{
+					margin-top: 20px;
+					margin-left: 5px;
+				}
+				.contact_add{
+					margin-top: 20px;
+					margin-left: 2px;
+					margin-bottom: 10px;
+				}
+				.contact_phone_right p{
+					margin-left: 14px;
+				}
+				.contact_add_right p{
+					margin-left: 18px;
+				}
+				.head{
+					position: fixed;
+					top: 0;
+					z-index: 100;
+				}
+				.middle{
+					margin-top: 70px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header_wrap"  style="height: 70px;">
+			<div id="header" >
+				<a id="logo" href="###" style="padding-top: 15px;background-repeat: no-repeat;"></a>
+				<div id="nav">
+					<a href="index.html">Home</a>
+					<a href="about.html">About</a>
+					<a href="rendering.html" >Rendering</a>
+					<a href="animation3d.html">3D Animation</a>
+					<a href="bim.html">Bim</a>
+					<a href="contact.html" class="choose">Contact</a>
+				</div>
+				<a class="nav1" href="###" style="padding-top: 5px;">
+					<img src="img/bars.png" />
+				</a>
+			</div>
+		</div>
+		<div class="middle">
+			<div class="middle_head">
+				<div >
+					<span>
+						Contacts:
+					</span>
+					<em>Eric Wang</em>
+				</div>
+				<div class="mail">
+					<a href="###">
+						<img src="img/contact_mail.jpg"/>
+						<span>Email:</span>
+						<em style="font-weight: 100;">eric@shining365.com</em>
+					</a>
+				</div>
+				<div class="contact_way">
+					<div class="contact_tele">
+						<img src="img/contact_phone.png"/>
+						<div class="contact_tele_right">
+							<p>+86 21 6598 6866-304</p>
+							<p>+86 21 6598 3188-304</p>
+						</div>
+					</div>
+					<div class="contact_phone">
+						<img src="img/iphone.png"/>
+						<div class="contact_phone_right">
+							<p>+86 138 1690 3400</p>
+						</div>
+					</div>
+					<div class="contact_add">
+						<img src="img/contact_add.png"/>
+						<div class="contact_add_right">
+							<p>1-5F.creative center building,No.2,1147 Lane,
+Siping Road,Yangpu District,Shanghai
+							</p>
+						</div>
+					</div>
+				</div>
+				<img src="img/contact_place.png" class="img1"/>
+				<div class="bottom">
+					<div class="footer">
+						<a href="###">
+							<img src="img/facebook.jpg" style="opacity: 1;"/>
+							<img src="img/facebook_h.jpg" style="opacity: 0;"/>
+						</a>
+						<a href="###">
+							<img src="img/youtube.jpg" style="opacity: 1;"/>
+							<img src="img/youtube_h.jpg" style="opacity: 0;"/>
+						</a>
+						<a href="###">
+							<img src="img/linkedln.jpg" style="opacity: 1;"/>
+							<img src="img/linkedln_h.jpg" style="opacity: 0;"/>
+						</a>
+						<a href="###" style="margin-right: 0;">
+							<img src="img/twitter.jpg" style="opacity: 1;"/>
+							<img src="img/twitter_h.jpg" style="opacity: 0;"/>
+						</a>
+					</div>
+					
+					<div class="copyright">
+						<p>Copyright © 1998-2015 shining Group</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="jquery-1.12.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="index.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function (){
+			//头部点击效果切换
+			$(".links a").last().addClass("active");
+			$(".links a").on("click",function (){
+				$.each($(".links a"), function(index,el) {
+					$(el).removeClass("active");
+				});	
+				$(this).addClass("active");
+			});
+			
+			function changeFn(obj){
+				obj.on("mouseenter",function (){
+					$(this).find("img").last().css({
+						opacity:1
+					});
+				});
+				obj.on("mouseleave",function (){
+					$(this).find("img").last().css({
+						opacity:0
+					});
+				});
+			}
+			changeFn($(".footer").children());
+			
+			var bol = false//假设菜单栏为隐藏
+			$(".links1").on("click",function(){
+				if(bol){
+					bol = false;
+					$(".links2").slideUp();
+				}else{
+					bol = true;
+					$(".links2").slideDown();
+				}
+			});
+			$(".links2").on("mouseleave",function(){
+				$(".links2").css("display","none");
+			});
+		});
+	</script>
+</html>

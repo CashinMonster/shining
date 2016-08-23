@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />	
+		<title>
+			Rendering
+		</title>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<link rel="stylesheet" type="text/css" href="reset.css"/> 
+		<link rel="stylesheet" type="text/css" href="swiper.min.css"/>
+		<style type="text/css">
+			html,body{
+	            
+			}
+	         .doom{
+	         	width: 100%;
+	         	height: 100%;
+	         	background-color:black;
+	         	opacity: 0;
+	         	/*position: fixed;*/
+	         	/*z-index: 10;*/
+	         }
+	        .doom1{
+	        	    width: 100%;
+	         	height: 100%;        	    
+	        }
+			
+			.swiper-container {
+		        width: 100%;
+		        position: relative;
+		        overflow: hidden;
+		        z-index: 1;
+		    }
+		    .swiper-wrapper{
+		    		position: relative;
+			    width: 100%;
+			    z-index: 1;
+		    }
+		    .swiper-wrapper .img2,.swiper-wrapper .img3{
+		    		opacity: 0;
+		    }
+		    .swiper-slide {
+		    		width: 100%;
+		        position: relative;
+		    }
+		    .swiper-slide img{
+		    		width: 100%;
+		    }
+			.waterfall{
+				width: 98%;
+				margin-top: 1rem;
+				padding: 0 1%;
+			}
+			.waterfall ul{
+			    width:100%;
+			    position: relative;
+			}
+			.waterfall ul li{
+			    position: absolute;
+				/*width:25%;*/
+			}
+			.waterfall ul li img{
+				width: 98%;
+				height: auto;
+				display: block;
+				margin: 0 auto;
+
+			}
+			.waterfall ul li a{
+				opacity: 0;
+				background-color: black;
+				position: absolute;
+				width: 98%;
+				height:auto;              
+			}
+			.waterfall ul li .fangda{
+				opacity:0;
+				position: absolute;
+				width:10%;
+				left:45%;
+				top:45%;                
+			}
+			.fangdaImg{
+				position:fixed;
+				width: 0;
+				height: 0;
+				/*left:50%;
+				top: 50%;*/
+				z-index: 9999;
+				margin:auto;
+				left:0; 
+				right:0; 
+				top:0; 
+				bottom:0;
+				background-color: white;
+				padding: 5px;
+			}
+			.fangdaImg img{
+				width: 100%;
+			}
+			@media screen and (max-width: 640px){
+				.swiper-container{
+					margin-top: 70px;
+				}
+			}
+				
+		</style>
+	</head>
+	<body>
+		<div class="doom"></div>
+		<div class="doom1"></div>
+				<!--头部-->
+		<div id="header_wrap"  style="height: 70px;">
+			<div id="header" >
+				<a id="logo" href="###" style="padding-top: 15px;background-repeat: no-repeat;"></a>
+				<div id="nav">
+					<a href="index.html">Home</a>
+					<a href="about.html">About</a>
+					<a href="rendering.html" class="choose">Rendering</a>
+					<a href="animation3d.html">3D Animation</a>
+					<a href="bim.html">Bim</a>
+					<a href="contact.html">Contact</a>
+				</div>
+				<a class="nav1" href="###" style="padding-top: 5px;">
+					<img src="img/bars.png" />
+				</a>
+			</div>
+		</div>
+		<!--大图滚动-->
+		
+		<div class="swiper-container swiper-container-horizontal swiper-container-fade">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide swiper-slide-prev" ><img src="img/160105-3.jpg"/></div>
+				<div class="swiper-slide swiper-slide-active" ><img src="img/160105-2.jpg"/></div>
+				<div class="swiper-slide swiper-slide-next" ><img src="img/160105-1.jpg"/></div>
+			</div>
+			<div class="swiper-pagination swiper-pagination-white swiper-pagination-clickable swiper-pagination-bullets">
+			 	<span class="swiper-pagination-bullet"></span>
+			 	<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+			 	<span class="swiper-pagination-bullet"></span>
+			</div>
+		</div>
+		<!--瀑布流-->
+		<div class="waterfall">
+			<ul>
+			</ul>
+		</div>
+		
+		<!--底部-->
+		<div class="footer">
+			<div class="email">
+				<a href="###">
+					<img src="img/mail.png" />
+					<img class="img3" src="img/mail-c.png" />
+				</a>
+			</div>
+			<div class='touchUs'>
+				<a href="###">
+					<img src="img/facebook.jpg" alt="" />
+					<img class="img3" src="img/facebook_h.jpg" />
+				</a>
+				<a href="###">
+					<img src="img/youtube.jpg" alt="" />
+					<img class="img3" src="img/youtube_h.jpg" />
+				</a>
+				<a href="###">
+					<img src="img/linkedln.jpg" alt="" />
+					<img class="img3" src="img/linkedln_h.jpg" />
+				</a>
+				<a href="###">
+					<img src="img/twitter.jpg" alt="" />
+					<img class="img3" src="img/twitter_h.jpg" />
+					
+				</a>
+			</div>		
+			<p class="copyRight">Copyright © 1998-2015 shining Group</p>
+		</div>
+	</body>
+	<script src="jquery-1.12.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <!--插入顺序不能乱!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+	<script src="index.js" type="text/javascript" charset="utf-8"></script>
+	<script src="loading.js" type="text/javascript" charset="utf-8"></script>
+	<script src="opacity.js" type="text/javascript" charset="utf-8"></script>
+	<script src="waterfall.js" type="text/javascript" charset="utf-8"></script>
+	<script src="swiper.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="jquery.goup.min.js"></script>
+
+	<script type="text/javascript">
+
+		$(function(){
+			
+		    	     $('.email').xian('.img3',100);
+		    	     $('.touchUs a').xian('.img3',100);
+		    	     
+// 下面是无效的----------------------------------------------------------	------------------    	   		    	     
+//		    	     $('.waterfall li a').xian('.fangda',300);
+//               $('.waterfall li').xian('a',300,0.5); 
+// 正确的是在waterfall.js中添加----------------------------------------------------------	    	   
+//	大图滚动----------------------------------------------------------	    	     
+//		    	     
+		    	     var swiper = new Swiper('.swiper-container', {
+			        pagination: '.swiper-pagination',
+			        paginationClickable: '.swiper-pagination',
+//			        spaceBetween: 30,
+			        effect: 'fade',
+			        loop:true,
+			        autoplay:3000,
+			        autoplayDisableOnInteraction: false,
+			        paginationClickable: true,
+			        centeredSlides: true
+			    });
+    			     
+
+// 点击放大-----------------------------------------------------------------------------------
+
+           
+		$.each($('.waterfall li'),function(index,el){
+			$(el).on('mouseleave', function(){
+				$(el).find(obj).stop().animate({
+					'opacity': 0
+				},time1);
+			});
+		});
+		$.goup({
+                trigger: 100,
+                bottomOffset: 10,
+                locationOffset: 50,
+                title: '回到顶部',
+                titleAsText: true
+            });
+	});
+		    
+	</script>
+</html>
